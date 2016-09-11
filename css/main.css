@@ -1,3 +1,37 @@
+/**** Button for Source Code
+****/
+
+.btn-source {
+  border-color: #028fcc;
+  font-size: 20px;
+  font-weight: 300;
+
+
+}
+.btn-source:hover {
+	border-color: #028fcc;
+  background-color:#028fcc;
+  color: #fff;
+}
+
+/*.btn-source:hover, {
+	border-color: #028fcc;
+  background-color:#028fcc;
+  color: #fff;
+}
+.btn-source {
+  font-size: 12px;
+  padding: 10px 30px;
+}
+.caption .btn-source {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding:14px 40px;
+  border: 1px solid #6e6d6c;
+  border-radius: 4px;
+  margin-top: 40px;
+}*/
 
 /*************************
 *******Typography******
@@ -7,7 +41,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 24px;
-  color: #666;
+  color: #555;
   background-color: #fff;
 }
 
@@ -31,7 +65,7 @@ h4 {
 }
 
 p {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 
@@ -66,10 +100,11 @@ p {
   color: #fff;
 }
 
-.btn {
+/*Bad Code*/
+/*.btn {
   border: 0;
   border-radius: 0;
-}
+}*/
 
 .btn.btn-primary:hover {
   background-color: #017fb5;
