@@ -14,25 +14,6 @@
   color: #fff;
 }
 
-/*.btn-source:hover, {
-	border-color: #028fcc;
-  background-color:#028fcc;
-  color: #fff;
-}
-.btn-source {
-  font-size: 12px;
-  padding: 10px 30px;
-}
-.caption .btn-source {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-  padding:14px 40px;
-  border: 1px solid #6e6d6c;
-  border-radius: 4px;
-  margin-top: 40px;
-}*/
-
 /*************************
 *******Typography******
 **************************/
@@ -100,12 +81,6 @@ p {
   color: #fff;
 }
 
-/*Bad Code*/
-/*.btn {
-  border: 0;
-  border-radius: 0;
-}*/
-
 .btn.btn-primary:hover {
   background-color: #017fb5;
 }
@@ -161,18 +136,6 @@ section {
   margin-top: -15px;
   margin-left: -15px;
   display: inline-block;
-}
-
-/**
-DevIcon
-**/
-
-/*.devicon-nodejs_small {
-  max-width: 2em;
-}*/
-
-.devicon-nodejs-plain path {
-  fill: #028fcc;
 }
 
 /*************************
@@ -342,8 +305,11 @@ DevIcon
 }
 
 /*************************
-********Service CSS*******
+********Project CSS*******
 **************************/
+.img-space {
+  padding: 0px 3px 0px 3px;
+}
 
 .project-name {
   font-weight:bold;
