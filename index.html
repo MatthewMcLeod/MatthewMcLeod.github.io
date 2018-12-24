@@ -30,8 +30,9 @@
 <div>
   <span id="msg">You haven't submitted a password</span>
 </div>
-
-<img id = "img_thing"  style="display: none;" src="./birthday_image.jpg" width=750 height=512></img>
+<div id = "definitely_not_important" style="display: none;">
+</div>
+<img id = "background"  style="display: none;" src="./white_background.jpg" width=750 height=512></img>
 <!--  -->
 
 <script>
@@ -48,25 +49,19 @@ function Matts_Magic_Hash(str) {
     return hash;
 }
 
+function DisplayLogic(t){0==t?($("#background").css("display",""),$("#msg").text("Wrong")):t<100?$("#msg").text("You are very close"):t<200?$("#msg").text("Somewhat close"):t<500?$("#msg").text("Correct ballpark"):$("#msg").text("Nope! Are you a Russian bot?"),$("definitely_not_important").css("display","")}
+
 $(document).ready(function(e){
     $('#sForm').on('submit',function(e){
         //
         inputVal = $('#search').val();
         inputHash = Matts_Magic_Hash(inputVal)
         diff = Math.abs(inputHash-PASSHASH)
+        DisplayLogic(diff)
         if (diff == 0) {
           $('#msg').text("You are Jonathan! Here is the card!");
-          $("#img_thing").css("display", "");
         }
-        else if (diff < 100) {
-          $('#msg').text("You are very close");
 
-        }
-        else if (diff < 200) {
-          $('#msg').text("Somewhat close");
-        } else {
-          $('#msg').text("Nope! Are you a Russian bot?");
-        }
 
         e.preventDefault();
 
